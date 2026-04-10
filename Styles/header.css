@@ -1,0 +1,150 @@
+.header{
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(242, 242, 242);
+  z-index: 100;
+}
+.left-section{
+  display: flex;
+  align-items: center;
+  
+}
+.menu-icon{
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.logo{
+  height: 24px;
+}
+.mid-section{
+  max-width: 600px;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  margin-left:60px ;
+  margin-right: 30px;
+  flex: 1;
+}
+.search-bar{
+  min-width: 0;
+  flex: 1;
+  height: 36px;
+  padding-left: 12px;
+  font-size: 16px;
+  border: 1px solid rgb(195, 195, 195);
+   border-radius: 2px 0 0 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+
+.search-bar::placeholder{
+  font-family: Roboto, Arial;
+  font-size: 16px;
+}
+.search-button{
+  width: 70px;
+  height: 39px;
+  border: 1px solid rgb(195, 195, 195);
+  margin-left: -1px;
+  border-radius: 0 2px 2px 0;
+  transition: all 0.15s;
+  position: relative;
+}
+.search-button:hover{
+  background-color: rgb(234, 234, 234);
+  cursor: pointer;
+}
+
+.tooltip{
+  position: absolute;
+  bottom: -30px;
+  background-color: rgb(114, 114, 114);
+  color: white;
+  padding: 4px 6px;
+  border-radius: 2px;
+  opacity: 0;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+
+button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+button:hover{
+  cursor: pointer;
+}
+button:hover .tooltip{
+  opacity: 1;
+}
+
+
+
+.search-icon{
+  height: 24px;
+}
+.voice-search-button{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-left: 10px;
+  border-style: none;
+  transition: all 0.15s;
+  position: relative;
+}
+.voice-search-button:hover{
+  background-color: rgb(228, 228, 228);
+}
+.voice-search-icon{
+  height: 24px;
+}
+.right-section{
+  width: 180px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.upload-icon{
+  height: 24px;
+}
+.yt-app-icon{
+  height: 24px;
+}
+
+.notification-icon{
+  height: 24px;
+}
+.notification-icon-container{
+  position: relative;
+}
+.notification-counter{
+  font-family: Roboto,Arial, Helvetica, sans-serif;
+  background-color: rgb(199, 0, 0);
+  color: white;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 10px;
+  border-radius: 20px;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+
+}
+.current-channel-icon{
+  height: 32px;
+  border-radius: 16px;
+}
